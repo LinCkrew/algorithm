@@ -1,0 +1,16 @@
+{
+  "name": "algorithm-study",
+  "version": "1.0.0",
+  "description": "Algorithm study group project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.{js,json,md}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.4.1"
+  }
+}
