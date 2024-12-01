@@ -5,6 +5,6 @@ const gameType = input[0].split(' ')[1]
 const targetNum = game[gameType] - 1
 
 const players = input.slice(1)
-const playerSet = [...new Set(players)]
+const playerSet = new Set(players)
 
-console.log(Math.floor(playerSet.length / targetNum))
+console.log(Math.floor(playerSet.size / targetNum))
