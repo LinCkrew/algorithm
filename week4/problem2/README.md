@@ -44,3 +44,10 @@ AABA is NOT surprising.
 AABB is surprising.
 BCBABCC is NOT surprising.
 ```
+
+## 알고리즘 분류
+
+- 구현
+- 자료 구조
+- 문자열
+- 해시를 사용한 집합과 맵
