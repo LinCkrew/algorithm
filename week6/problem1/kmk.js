@@ -1,31 +1,34 @@
-// 후위 표기법: 연산자가 피연산자 뒤에 위치
-// ABC*+DE/-
-
-let input = require('fs')
+let [N, ...input] = require('fs')
   .readFileSync('../../dev/stdin/index.txt')
   .toString()
   .trim()
   .split('\n');
-const N = input.shift();
-let postfixNotation = input.shift().trim().split('');
-let values = input.map(Number);
 
+let lineHeights = input.map(Number);
 let stack = [];
+let result = 0;
 
-postfixNotation.forEach((el) => {
-  if (['+', '-', '*', '/'].includes(el)) {
-    const num2 = stack.pop(); // 왼쪽
-    const num1 = stack.pop(); // 오른쪽
-    let result;
-    if (el === '+') result = num1 + num2;
-    else if (el === '-') result = num1 - num2;
-    else if (el === '*') result = num1 * num2;
-    else if (el === '/') result = num1 / num2;
-    stack.push(result);
-  } else {
-    stack.push(values[el.charCodeAt(0) - 'A'.charCodeAt(0)]);
+for (let height of lineHeights) {
+  let count = 1;
+
+  // 스택에 현재 사람보다 작거나 같은 키를 제거하면서 쌍 계산
+  while (stack.length > 0 && stack[stack.length - 1][0] <= height) {
+    let [prevHeight, prevCount] = stack.pop();
+    result += prevCount;
+
+    // 현재 키와 같다면 합치기
+    if (prevHeight === height) {
+      count += prevCount;
+    }
   }
-});
 
-const result = stack.pop();
-console.log(result.toFixed(2));
+  // 스택이 비어 있지 않다면 볼 수 있는 쌍 추가
+  if (stack.length > 0) {
+    result++;
+  }
+
+  // 현재 키와 카운트를 스택에 추가
+  stack.push([height, count]);
+}
+
+console.log(result);
