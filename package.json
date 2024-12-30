@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.4.1"
+  },
+  "dependencies": {
+    "eslint": "^9.17.0"
   }
 }
