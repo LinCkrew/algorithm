@@ -10,14 +10,14 @@
 
 1. 다음 정렬 알고리즘들을 JavaScript로 구현해보세요:
 
-   - 거품 정렬 (Bubble Sort)
-   - 선택 정렬 (Selection Sort)
-   - 삽입 정렬 (Insertion Sort)
-   - 퀵 정렬 (Quick Sort)
-   - 병합 정렬 (Merge Sort)
-   - 힙 정렬 (Heap Sort)
-   - 계수 정렬 (Counting Sort)
-   - 기수 정렬 (Radix sort)
+   - [ ] 거품 정렬 (Bubble Sort)
+   - [ ] 선택 정렬 (Selection Sort)
+   - [ ] 삽입 정렬 (Insertion Sort)
+   - [ ] 퀵 정렬 (Quick Sort)
+   - [ ] 병합 정렬 (Merge Sort)
+   - [ ] 힙 정렬 (Heap Sort)
+   - [ ] 계수 정렬 (Counting Sort)
+   - [ ] 기수 정렬 (Radix sort)
 
 2. 각 정렬 알고리즘을 구현하면서 다음 사항을 고려해 주세요:
    - 시간복잡도
