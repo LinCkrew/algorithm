@@ -54,8 +54,8 @@ const testBubbleSort = () => {
     const arr2 = [...arr];
 
     console.log(`\n테스트 케이스 ${index + 1}: ${arr}`);
-    console.log('기본 거품 정렬 실행 횟수:', bubbleSort(arr1));
-    console.log('최적화 거품 정렬 실행 횟수:', OptimizedBubbleSort(arr2));
+    console.log('기본 거품 정렬:', bubbleSort(arr1));
+    console.log('최적화 거품 정렬:', OptimizedBubbleSort(arr2));
   });
 };
 
