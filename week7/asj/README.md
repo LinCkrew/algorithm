@@ -11,7 +11,7 @@
 1. JavaScript 정렬 알고리즘 8종류:
 
    - [x] 거품 정렬 (Bubble Sort)
-   - [ ] 선택 정렬 (Selection Sort)
+   - [x] 선택 정렬 (Selection Sort)
    - [ ] 삽입 정렬 (Insertion Sort)
    - [ ] 퀵 정렬 (Quick Sort)
    - [ ] 병합 정렬 (Merge Sort)
@@ -37,3 +37,7 @@
 | 삽입 정렬     | O(n²)           | O(n²)           | O(1)       | 안정   |
 | 퀵 정렬       | O(nlogn)        | O(n²)           | O(logn)    | 불안정 |
 | 병합 정렬     | O(nlogn)        | O(nlogn)        | O(n)       | 안정   |
+
+### 강의 참고 자료
+
+- [visualgo](https://visualgo.net/en/sorting)
