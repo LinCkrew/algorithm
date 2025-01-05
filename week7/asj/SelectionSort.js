@@ -19,3 +19,8 @@ function selectionSort(arr) {
 
 console.log(selectionSort(arr1));
 console.log(selectionSort(arr2));
+
+// unstable
+// in-place
+// 시간복잡도: O(n^2)_최악, 최선, 평균 모두
+// 공간복잡도: O(1)

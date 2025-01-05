@@ -60,3 +60,8 @@ const testBubbleSort = () => {
 };
 
 testBubbleSort();
+
+// stable
+// in-place
+// 시간복잡도: O(n^2)_최악, 최선, 평균 모두
+// 공간복잡도: O(1)
